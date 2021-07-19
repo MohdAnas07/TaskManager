@@ -1,0 +1,24 @@
+.listItem{
+    width: 200px;
+    display: block;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+    margin: 20px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.list:hover{
+    box-shadow: 5px 5px 20px rgb(219, 219, 219);
+}

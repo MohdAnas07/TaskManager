@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+}
+
+.side-nav{
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(4, 4, 77);
+}
