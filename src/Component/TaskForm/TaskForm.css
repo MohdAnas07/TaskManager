@@ -26,13 +26,16 @@ p{
     /* box-sizing: border-box; */
     background-color: rgb(237, 250, 254);;
     align-items: center;
-    height: 310px;
+    /* height: 0; */
     border-radius: 0px 0px 3px 3px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
 }
+
 
 .task-bar{
     margin-top: 50px;
-    padding: 10px ;
     border: 1px solid #eaeaea;
     margin-left: 10px;
     margin-right: 10px;
@@ -41,15 +44,14 @@ p{
     box-sizing: border-box;
     background-color: #f2f2f2;
     border-radius: 3px 3px 0px 0px;
-}
-
-.task-bar{
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
+    padding: 10px;
 }
+
 .task-bar i{
     cursor: pointer;
     /* border-left: 2px solid black; */
@@ -65,18 +67,19 @@ hr{
 #TaskDesc{
     outline: none;
     padding: 6px;
-    width: 332px;
+    width: 100%;
     border: 1px solid #ded9d9;
     border-radius: 4px;
 }
 
 .date, .time{
-    margin: 5px;
+    margin: 5px 0px;
     outline: none;
 }
 
 .date-time{
     display: flex;
+    justify-content: space-between;
     /* margin: 5px; */
     margin-bottom: 5px;
 }
@@ -105,7 +108,7 @@ hr{
     align-items: center;
     padding: 7px;
     border-radius: 5px;
-    width: 156px;
+    /* width: 156px; */
 }
 
 .select-op{

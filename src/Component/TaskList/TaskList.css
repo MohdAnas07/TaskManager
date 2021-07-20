@@ -2,11 +2,15 @@
     width: 200px;
     display: block;
 }
+hr{
+    border: 1px solid rgb(156, 156, 156);
+    margin: 10px 0px;
+  }
 
 .item{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 50px 10px;
 }
 
 .list{
@@ -14,11 +18,35 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(232, 232, 232);
-    margin: 20px;
+    margin: 0 30px 30px 0px;
     border-radius: 4px;
     padding: 8px;
 }
 
 .list:hover{
     box-shadow: 5px 5px 20px rgb(219, 219, 219);
+}
+
+.list i{
+    cursor: pointer;
+}
+
+.delete-btn{
+    padding: 1px 6px;
+border: none;
+border-radius: 5px;
+/* margin: 6px 0px; */
+color: white;
+}
+.delete-btn:hover{
+    background-color: rgb(168, 4, 4);
+}
+
+.edit-delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 3px 0;
+
 }

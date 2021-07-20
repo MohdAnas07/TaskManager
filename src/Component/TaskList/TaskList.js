@@ -7,7 +7,6 @@ const TaskList = () => {
 
     const { data: tasks, isPending, error } = useFetch('http://localhost:8000/tasks')
 
-    // console.log(tasks);
     return (
         <div className='item'>
             {tasks && tasks.map(task => {
@@ -17,6 +16,5 @@ const TaskList = () => {
         </div>
     )
 }
-
 
 export default TaskList
