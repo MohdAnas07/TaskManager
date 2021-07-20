@@ -21,17 +21,15 @@ const useFetch = (url) => {
             })
             .catch(err => {
                 if (err.name === 'AbortError') {
-                    console.log('Fetch Abort');
+
                 } else {
                     setIsPending(false)
                     setError(err.message);
                 }
-
             })
 
         return () => abortCont.abort();
-    }, [url]);
-
+    });
     return { data, isPending, error }
 }
 

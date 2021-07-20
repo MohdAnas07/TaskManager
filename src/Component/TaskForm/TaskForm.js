@@ -29,9 +29,7 @@ const TaskForm = () => {
         })
     }
 
-    const { data, IsPending, error } = useFetch('http://localhost:8000/tasks')
-    console.log(data?.length);
-
+    const { data, IsPending, error } = useFetch('http://localhost:8000/tasks', TaskForm);
 
     const handleTask = () => {
         setDesc('')
@@ -50,12 +48,13 @@ const TaskForm = () => {
 
     return (
         <div className='container'>
-            <div className='task'>
-                <div className='task-bar'>
-                    <p>TASKS - <span>{data?.length}</span></p>
-                    {!isShow ? <i className=" fa fa-plus" aria-hidden="true" onClick={taskToggle}></i> : <i class="fa fa-window-minimize" aria-hidden="true" onClick={taskToggle}></i>}
-                </div>
-                <Animated animationIn="fadeInDown" animationOut="fadeOutDown" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
+            <div className='form-container'>
+                <div className='task'>
+                    <div className='task-bar'>
+                        <p>TASKS - <span>{data?.length}</span></p>
+                        {!isShow ? <i className=" fa fa-plus" aria-hidden="true" onClick={taskToggle}></i> : <i class="fa fa-window-minimize" aria-hidden="true" onClick={taskToggle}></i>}
+                    </div>
+
                     <div style={{ display: isShow ? "block" : "none" }} className='task-form'>
                         <form onSubmit={handleSubmit} className='form' action="">
                             <div className="">
@@ -128,7 +127,7 @@ const TaskForm = () => {
                             </div>
                         </form>
                     </div>
-                </Animated>
+                </div>
             </div>
 
             <TaskList />

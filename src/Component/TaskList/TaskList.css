@@ -10,7 +10,6 @@ hr{
 .item{
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 10px;
 }
 
 .list{

@@ -4,13 +4,6 @@ import useFetch from '../../useFetch'
 
 const ListItem = ({ task }) => {
 
-    const [desc, setDesc] = useState('')
-    const [date, setDate] = useState('')
-    const [time, setTime] = useState('')
-    const [assignUser, setAssignUser] = useState('Anas');
-
-    const { data, error, isPending } = useFetch('http://localhost:8000/tasks/' + task.id)
-
     const handleDelete = () => {
         fetch('http://localhost:8000/tasks/' + data.id, {
             method: 'DELETE'
@@ -20,10 +13,11 @@ const ListItem = ({ task }) => {
         })
     }
 
+    const { data, error, isPending } = useFetch('http://localhost:8000/tasks/' + task.id, handleDelete)
+
+
     const handleEdit = () => {
         console.log(task.id);
-        setDesc("bhai apna")
-        // task.id.setDesc("munish")
     }
 
 
@@ -43,6 +37,5 @@ const ListItem = ({ task }) => {
         </div>
     )
 }
-
 
 export default ListItem

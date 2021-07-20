@@ -1,24 +1,10 @@
 {
   "tasks": [
     {
-      "desc": "anas here ",
-      "date": "2021-07-15",
-      "time": "9:00AM",
+      "desc": "full task manager",
+      "date": "2021-07-23",
+      "time": "2:00PM",
       "assignUser": "Anas",
-      "id": 2
-    },
-    {
-      "desc": "dvssvsd",
-      "date": "2021-07-07",
-      "time": "10:00AM",
-      "assignUser": "Anas",
-      "id": 4
-    },
-    {
-      "desc": "dsjkb ",
-      "date": "2021-07-06",
-      "time": "8:00AM",
-      "assignUser": "Anshu",
       "id": 5
     }
   ]

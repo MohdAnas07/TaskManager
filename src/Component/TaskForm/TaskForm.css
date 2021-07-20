@@ -10,23 +10,27 @@ p{
 }
 
 .task{
+    margin: 50px 0px;
     border-radius: 5px;
     width: 380px;
+    overflow: hidden;
 }
 
 .task-form input{
     outline: none;
 }
 
+.form-container{
+    position: relative;
+}
+
 .task-form{
-    margin: 10px;
     margin-top: 0px;
     padding: 10px;
+    box-sizing: border-box;
     border :1px solid #eaeaea;
-    /* box-sizing: border-box; */
     background-color: rgb(237, 250, 254);;
     align-items: center;
-    /* height: 0; */
     border-radius: 0px 0px 3px 3px;
     transition-property: all;
     transition-duration: 3s;
@@ -35,12 +39,10 @@ p{
 
 
 .task-bar{
-    margin-top: 50px;
-    border: 1px solid #eaeaea;
-    margin-left: 10px;
-    margin-right: 10px;
+    
+    border: 1px solid hsl(0, 0%, 92%);
     border-bottom: 0;
-    padding: 4px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #f2f2f2;
     border-radius: 3px 3px 0px 0px;
@@ -49,7 +51,7 @@ p{
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
-    padding: 10px;
+   
 }
 
 .task-bar i{
